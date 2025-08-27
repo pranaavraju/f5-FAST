@@ -1,6 +1,7 @@
+bigiq_domain: DIRECT 
 application_list:
 - application_name: Test
   server_cert_list:
-  - certificate_name: test_cerificate.crt
-    server_cert_name: test1
-bigiq_domain: DIRECT
+  - server_cert_name: server_cert1
+    certificate_name: test_cerificate.crt
+
