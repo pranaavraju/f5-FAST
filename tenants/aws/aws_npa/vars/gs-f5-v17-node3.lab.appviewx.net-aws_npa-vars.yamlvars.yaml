@@ -201,12 +201,12 @@ application_list:
           - chosen_client_cert: client-cert
         cipher_group: /Common/f5-secure
     server_cert_list:
-      - server_cert_name: server-cert
+      - server_cert_name: test_server_ssl
         certificate: /Common/pl-cit-pega.awssaashub.test.lloydsbanking.com_20250106_1320.crt
         key: /Common/pl-cit-pega.awssaashub.test.lloydsbanking.com_20250106_1320
         chain: /Common/DigiCert_TLS_RSA_SHA256_2020_CA1
     client_cert_list:
-      - client_cert_name: client-cert
+      - client_cert_name: test_client_ssl
         certificate: /Common/pega-saashub-dev.test.lloydsbanking.cloud_20240423_0826.crt
         key: /Common/pega-saashub-dev.test.lloydsbanking.cloud_20240423_0826
         chainCA: /Common/lbg_pre-production_root_ica_bundle_and_hltsb_pre-production_issuing_ca_1_v3
