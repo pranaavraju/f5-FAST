@@ -202,8 +202,8 @@ application_list:
     cipher_group: /Common/f5-secure
   server_cert_list:
   - server_cert_name: test_server_ssl
-    certificate: test_aws_npa_push_20250905.crt
-    key: test_aws_npa_push_20250905.key
+    certificate: test_parent_cert.crt
+    key: test_parent_cert.key
     chain: /Common/DigiCert_TLS_RSA_SHA256_2020_CA1
   client_cert_list:
   - client_cert_name: test_client_ssl
