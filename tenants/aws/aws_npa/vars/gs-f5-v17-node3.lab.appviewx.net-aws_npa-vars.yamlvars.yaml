@@ -8,268 +8,268 @@ log_level: debug
 bigip_name: bigip-1001d.aws.cloud.test.group
 tenant_name: aws_pega_vpc1_inbound_as3
 application_list:
-  - application_name: AL16585-CIT-AZ2A
-    vserver_list:
-      - vserver_name: pl-sv3b-cit.awssaashub.test.lloydsbanking.com_vs_44348
-        virtual_addresses:
-          - 10.52.42.72
-        virtual_port: 44348
-        allow_vlans:
-          - /Common/external
-        chosen_snat_pool: /Common/Shared/internal_snatpool
-        chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
-        chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
-        pool_option:
-          - chosen_pool: pl-sv3b-cit.awssaashub.test.lloydsbanking.com-pool
-        chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
-        client_tls_option:
-          - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
-        security_log_profiles:
-          - /Common/Shared/log_all_events_request_response
-        policies:
-          - asm_auto_l7_policy__aws_pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
-      - vserver_name: pl-sv3a-cit.awssaashub.test.lloydsbanking.com_vs_44347
-        virtual_addresses:
-          - 10.52.42.72
-        virtual_port: 44347
-        allow_vlans:
-          - /Common/external
-        chosen_snat_pool: /Common/Shared/internal_snatpool
-        chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
-        chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
-        pool_option:
-          - chosen_pool: pl-sv3a-cit.awssaashub.test.lloydsbanking.com-pool
-        chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
-        client_tls_option:
-          - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
-        security_log_profiles:
-          - /Common/Shared/log_all_events_request_response
-        policies:
-          - asm_auto_l7_policy__aws_pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
-      - vserver_name: pl-sv2b-cit.awssaashub.test.lloydsbanking.com_vs_44346
-        virtual_addresses:
-          - 10.52.42.72
-        virtual_port: 44346
-        allow_vlans:
-          - /Common/external
-        chosen_snat_pool: /Common/Shared/internal_snatpool
-        chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
-        chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
-        pool_option:
-          - chosen_pool: pl-sv2b-cit.awssaashub.test.lloydsbanking.com-pool
-        chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
-        client_tls_option:
-          - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
-        security_log_profiles:
-          - /Common/Shared/log_all_events_request_response
-        policies:
-          - asm_auto_l7_policy__aws_pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
-      - vserver_name: pl-sv2a-cit.awssaashub.test.lloydsbanking.com_vs_44345
-        virtual_addresses:
-          - 10.52.42.72
-        virtual_port: 44345
-        allow_vlans:
-          - /Common/external
-        chosen_snat_pool: /Common/Shared/internal_snatpool
-        chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
-        chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
-        pool_option:
-          - chosen_pool: pl-sv2a-cit.awssaashub.test.lloydsbanking.com-pool
-        chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
-        client_tls_option:
-          - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
-        security_log_profiles:
-          - /Common/Shared/log_all_events_request_response
-        policies:
-          - asm_auto_l7_policy__aws_pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
-      - vserver_name: pl-sv1a-cit.awssaashub.test.lloydsbanking.com_vs_44343
-        virtual_addresses:
-          - 10.52.42.72
-        virtual_port: 44343
-        allow_vlans:
-          - /Common/external
-        chosen_snat_pool: /Common/Shared/internal_snatpool
-        chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
-        chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
-        pool_option:
-          - chosen_pool: pl-sv1a-cit.awssaashub.test.lloydsbanking.com-pool
-        chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
-        client_tls_option:
-          - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
-        security_log_profiles:
-          - /Common/Shared/log_all_events_request_response
-        policies:
-          - asm_auto_l7_policy__aws_pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
-      - vserver_name: pl-sv1b-cit.awssaashub.test.lloydsbanking.com_vs_44344
-        virtual_addresses:
-          - 10.52.42.72
-        virtual_port: 44344
-        allow_vlans:
-          - /Common/external
-        chosen_snat_pool: /Common/Shared/internal_snatpool
-        chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
-        chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
-        pool_option:
-          - chosen_pool: pl-sv1b-cit.awssaashub.test.lloydsbanking.com-pool
-        chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
-        client_tls_option:
-          - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
-        security_log_profiles:
-          - /Common/Shared/log_all_events_request_response
-        policies:
-          - asm_auto_l7_policy__aws_pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
-    tcp_monitor_list:
-      - tcp_monitor_name: default_mon_tcp
-    https_monitor_list:
-      - https_monitor_name: pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
-        poll_timer_option:
-          - poll_interval: 30
-            poll_timeout: 91
-        send_string: GET /\r\n
-        receive_string: ""
-    http_profile_list:
-      - http_profile_name: pl-cit.awssaashub.test.lloydsbanking.com_http
-    tcp_profile_list:
-      - tcp_profile_name: pl-cit.awssaashub.test.lloydsbanking.com_tcp
-    pool_list:
-      - pool_name: pl-sv3b-cit.awssaashub.test.lloydsbanking.com-pool
-        monitor_list:
-         - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
-        member_list:
-          - server_enable: true
-            server_addresses:
-              - 10.172.58.69
-            server_port: 9080
-      - pool_name: pl-sv3a-cit.awssaashub.test.lloydsbanking.com-pool
-        monitor_list:
-         - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
-        member_list:
-          - server_enable: true
-            server_addresses:
-              - 10.172.58.69
-            server_port: 443
-      - pool_name: pl-sv2b-cit.awssaashub.test.lloydsbanking.com-pool
-        monitor_list:
-         - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
-        member_list:
-          - server_enable: true
-            server_addresses:
-              - 10.172.58.67
-            server_port: 9080
-      - pool_name: pl-sv2a-cit.awssaashub.test.lloydsbanking.com-pool
-        monitor_list:
-         - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
-        member_list:
-          - server_enable: true
-            server_addresses:
-              - 10.172.58.67
-            server_port: 443
-      - pool_name: pl-sv1a-cit.awssaashub.test.lloydsbanking.com-pool
-        monitor_list:
-         - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
-        member_list:
-          - server_enable: true
-            server_addresses:
-              - 10.172.58.50
-            server_port: 443
-      - pool_name: pl-sv1b-cit.awssaashub.test.lloydsbanking.com-pool
-        monitor_list:
-         - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
-        member_list:
-          - server_enable: true
-            server_addresses:
-              - 10.172.58.50
-            server_port: 9080
-    server_TLS_list:
-      - server_TLS_name: pl-cit.awssaashub.test.lloydsbanking-clientssl
-        client_auth: require
-        client_auth_frequency: every-time
-        trust_chain: /Common/digicert_quovadis_ca_bundle
-        chosen_server_cert: server-cert
-        tls1_2: true
-        tls1_3: false
-        cipher_group: /Common/Shared/ciphergroup_va02_os15_secure_all
-    client_TLS_list:
-      - client_TLS_name: serverssl_os16_secure_ext_aws_saas_hub
-        trust_chain: /Common/lbg_pre-production_root_ica_bundle_and_hltsb_pre-production_issuing_ca_1_v3
-        client_certificate_option:
-          - chosen_client_cert: client-cert
-        cipher_group: /Common/Shared/ciphergroup_va02_os15_secure_all
-      - client_TLS_name: serverssl_os16_compat_ext_aws_saas_hub
-        trust_chain: /Common/lbg_pre-production_root_ica_bundle_and_hltsb_pre-production_issuing_ca_1_v3
-        client_certificate_option:
-          - chosen_client_cert: client-cert
-        cipher_group: /Common/f5-secure
-    server_cert_list:
-      - server_cert_name: test_server_ssl
-        certificate: /Common/pl-cit-pega.awssaashub.test.lloydsbanking.com_20250106_1320.crt
-        key: /Common/pl-cit-pega.awssaashub.test.lloydsbanking.com_20250106_1320
-        chain: /Common/DigiCert_TLS_RSA_SHA256_2020_CA1
-    client_cert_list:
-      - client_cert_name: test_client_ssl
-        certificate: /Common/pega-saashub-dev.test.lloydsbanking.cloud_20240423_0826.crt
-        key: /Common/pega-saashub-dev.test.lloydsbanking.cloud_20240423_0826
-        chainCA: /Common/lbg_pre-production_root_ica_bundle_and_hltsb_pre-production_issuing_ca_1_v3
-    traffic_policy_list:
-      - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
-        strategy: first-match
-        remark: Comment placeholder
-        traffic_rule_name: default
-        traffic_rule_remark: Enable asm policy at request time
-        waf_policy: pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
-      - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
-        strategy: first-match
-        remark: Comment placeholder
-        traffic_rule_name: default
-        traffic_rule_remark: Enable asm policy at request time
-        waf_policy: pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
-      - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
-        strategy: first-match
-        remark: Comment placeholder
-        traffic_rule_name: default
-        traffic_rule_remark: Enable asm policy at request time
-        waf_policy: pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
-      - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
-        strategy: first-match
-        remark: Comment placeholder
-        traffic_rule_name: default
-        traffic_rule_remark: Enable asm policy at request time
-        waf_policy: pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
-      - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
-        strategy: first-match
-        remark: Comment placeholder
-        traffic_rule_name: default
-        traffic_rule_remark: Enable asm policy at request time
-        waf_policy: pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
-      - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
-        strategy: first-match
-        remark: Comment placeholder
-        traffic_rule_name: default
-        traffic_rule_remark: Enable asm policy at request time
-        waf_policy: pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
-    waf_policy_list:
-      - waf_policy_name: pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
-        zone: aws
-        tenant_name: aws_pega_vpc1_inbound_as3
-        waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
-      - waf_policy_name: pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
-        zone: aws
-        tenant_name: aws_pega_vpc1_inbound_as3
-        waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
-      - waf_policy_name: pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
-        zone: aws
-        tenant_name: aws_pega_vpc1_inbound_as3
-        waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
-      - waf_policy_name: pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
-        zone: aws
-        tenant_name: aws_pega_vpc1_inbound_as3
-        waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
-      - waf_policy_name: pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
-        zone: aws
-        tenant_name: aws_pega_vpc1_inbound_as3
-        waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
-      - waf_policy_name: pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
-        zone: aws
-        tenant_name: aws_pega_vpc1_inbound_as3
-        waf_policy_file: pl-sv1a.awssaashub_44343_spolicy.xml
+- application_name: AL16585-CIT-AZ2A
+  vserver_list:
+  - vserver_name: pl-sv3b-cit.awssaashub.test.lloydsbanking.com_vs_44348
+    virtual_addresses:
+    - 10.52.42.72
+    virtual_port: 44348
+    allow_vlans:
+    - /Common/external
+    chosen_snat_pool: /Common/Shared/internal_snatpool
+    chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
+    chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
+    pool_option:
+    - chosen_pool: pl-sv3b-cit.awssaashub.test.lloydsbanking.com-pool
+    chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
+    client_tls_option:
+    - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
+    security_log_profiles:
+    - /Common/Shared/log_all_events_request_response
+    policies:
+    - asm_auto_l7_policy__aws_pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
+  - vserver_name: pl-sv3a-cit.awssaashub.test.lloydsbanking.com_vs_44347
+    virtual_addresses:
+    - 10.52.42.72
+    virtual_port: 44347
+    allow_vlans:
+    - /Common/external
+    chosen_snat_pool: /Common/Shared/internal_snatpool
+    chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
+    chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
+    pool_option:
+    - chosen_pool: pl-sv3a-cit.awssaashub.test.lloydsbanking.com-pool
+    chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
+    client_tls_option:
+    - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
+    security_log_profiles:
+    - /Common/Shared/log_all_events_request_response
+    policies:
+    - asm_auto_l7_policy__aws_pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
+  - vserver_name: pl-sv2b-cit.awssaashub.test.lloydsbanking.com_vs_44346
+    virtual_addresses:
+    - 10.52.42.72
+    virtual_port: 44346
+    allow_vlans:
+    - /Common/external
+    chosen_snat_pool: /Common/Shared/internal_snatpool
+    chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
+    chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
+    pool_option:
+    - chosen_pool: pl-sv2b-cit.awssaashub.test.lloydsbanking.com-pool
+    chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
+    client_tls_option:
+    - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
+    security_log_profiles:
+    - /Common/Shared/log_all_events_request_response
+    policies:
+    - asm_auto_l7_policy__aws_pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
+  - vserver_name: pl-sv2a-cit.awssaashub.test.lloydsbanking.com_vs_44345
+    virtual_addresses:
+    - 10.52.42.72
+    virtual_port: 44345
+    allow_vlans:
+    - /Common/external
+    chosen_snat_pool: /Common/Shared/internal_snatpool
+    chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
+    chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
+    pool_option:
+    - chosen_pool: pl-sv2a-cit.awssaashub.test.lloydsbanking.com-pool
+    chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
+    client_tls_option:
+    - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
+    security_log_profiles:
+    - /Common/Shared/log_all_events_request_response
+    policies:
+    - asm_auto_l7_policy__aws_pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
+  - vserver_name: pl-sv1a-cit.awssaashub.test.lloydsbanking.com_vs_44343
+    virtual_addresses:
+    - 10.52.42.72
+    virtual_port: 44343
+    allow_vlans:
+    - /Common/external
+    chosen_snat_pool: /Common/Shared/internal_snatpool
+    chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
+    chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
+    pool_option:
+    - chosen_pool: pl-sv1a-cit.awssaashub.test.lloydsbanking.com-pool
+    chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
+    client_tls_option:
+    - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
+    security_log_profiles:
+    - /Common/Shared/log_all_events_request_response
+    policies:
+    - asm_auto_l7_policy__aws_pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
+  - vserver_name: pl-sv1b-cit.awssaashub.test.lloydsbanking.com_vs_44344
+    virtual_addresses:
+    - 10.52.42.72
+    virtual_port: 44344
+    allow_vlans:
+    - /Common/external
+    chosen_snat_pool: /Common/Shared/internal_snatpool
+    chosen_http_profile: pl-cit.awssaashub.test.lloydsbanking.com_http
+    chosen_tcp_profile: pl-cit.awssaashub.test.lloydsbanking.com_tcp
+    pool_option:
+    - chosen_pool: pl-sv1b-cit.awssaashub.test.lloydsbanking.com-pool
+    chosen_server_TLS: pl-cit.awssaashub.test.lloydsbanking-clientssl
+    client_tls_option:
+    - chosen_client_TLS: serverssl_os16_secure_ext_aws_saas_hub
+    security_log_profiles:
+    - /Common/Shared/log_all_events_request_response
+    policies:
+    - asm_auto_l7_policy__aws_pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
+  tcp_monitor_list:
+  - tcp_monitor_name: default_mon_tcp
+  https_monitor_list:
+  - https_monitor_name: pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
+    poll_timer_option:
+    - poll_interval: 30
+      poll_timeout: 91
+    send_string: GET /\r\n
+    receive_string: ""
+  http_profile_list:
+  - http_profile_name: pl-cit.awssaashub.test.lloydsbanking.com_http
+  tcp_profile_list:
+  - tcp_profile_name: pl-cit.awssaashub.test.lloydsbanking.com_tcp
+  pool_list:
+  - pool_name: pl-sv3b-cit.awssaashub.test.lloydsbanking.com-pool
+    monitor_list:
+    - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
+    member_list:
+    - server_enable: true
+      server_addresses:
+      - 10.172.58.69
+      server_port: 9080
+  - pool_name: pl-sv3a-cit.awssaashub.test.lloydsbanking.com-pool
+    monitor_list:
+    - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
+    member_list:
+    - server_enable: true
+      server_addresses:
+      - 10.172.58.69
+      server_port: 443
+  - pool_name: pl-sv2b-cit.awssaashub.test.lloydsbanking.com-pool
+    monitor_list:
+    - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
+    member_list:
+    - server_enable: true
+      server_addresses:
+      - 10.172.58.67
+      server_port: 9080
+  - pool_name: pl-sv2a-cit.awssaashub.test.lloydsbanking.com-pool
+    monitor_list:
+    - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
+    member_list:
+    - server_enable: true
+      server_addresses:
+      - 10.172.58.67
+      server_port: 443
+  - pool_name: pl-sv1a-cit.awssaashub.test.lloydsbanking.com-pool
+    monitor_list:
+    - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
+    member_list:
+    - server_enable: true
+      server_addresses:
+      - 10.172.58.50
+      server_port: 443
+  - pool_name: pl-sv1b-cit.awssaashub.test.lloydsbanking.com-pool
+    monitor_list:
+    - pl-cit.awssaashub.test.lloydsbanking.com_monitor_https
+    member_list:
+    - server_enable: true
+      server_addresses:
+      - 10.172.58.50
+      server_port: 9080
+  server_TLS_list:
+  - server_TLS_name: pl-cit.awssaashub.test.lloydsbanking-clientssl
+    client_auth: require
+    client_auth_frequency: every-time
+    trust_chain: /Common/digicert_quovadis_ca_bundle
+    chosen_server_cert: server-cert
+    tls1_2: true
+    tls1_3: false
+    cipher_group: /Common/Shared/ciphergroup_va02_os15_secure_all
+  client_TLS_list:
+  - client_TLS_name: serverssl_os16_secure_ext_aws_saas_hub
+    trust_chain: /Common/lbg_pre-production_root_ica_bundle_and_hltsb_pre-production_issuing_ca_1_v3
+    client_certificate_option:
+    - chosen_client_cert: client-cert
+    cipher_group: /Common/Shared/ciphergroup_va02_os15_secure_all
+  - client_TLS_name: serverssl_os16_compat_ext_aws_saas_hub
+    trust_chain: /Common/lbg_pre-production_root_ica_bundle_and_hltsb_pre-production_issuing_ca_1_v3
+    client_certificate_option:
+    - chosen_client_cert: client-cert
+    cipher_group: /Common/f5-secure
+  server_cert_list:
+  - server_cert_name: test_server_ssl
+    certificate: /Common/pl-cit-pega.awssaashub.test.lloydsbanking.com_20250106_1320.crt
+    key: /Common/pl-cit-pega.awssaashub.test.lloydsbanking.com_20250106_1320
+    chain: /Common/DigiCert_TLS_RSA_SHA256_2020_CA1
+  client_cert_list:
+  - client_cert_name: test_client_ssl
+    certificate: /Common/pega-saashub-dev.test.lloydsbanking.cloud_20240423_0826.crt
+    key: /Common/pega-saashub-dev.test.lloydsbanking.cloud_20240423_0826
+    chainCA: /Common/lbg_pre-production_root_ica_bundle_and_hltsb_pre-production_issuing_ca_1_v3
+  traffic_policy_list:
+  - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
+    strategy: first-match
+    remark: Comment placeholder
+    traffic_rule_name: default
+    traffic_rule_remark: Enable asm policy at request time
+    waf_policy: pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
+  - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
+    strategy: first-match
+    remark: Comment placeholder
+    traffic_rule_name: default
+    traffic_rule_remark: Enable asm policy at request time
+    waf_policy: pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
+  - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
+    strategy: first-match
+    remark: Comment placeholder
+    traffic_rule_name: default
+    traffic_rule_remark: Enable asm policy at request time
+    waf_policy: pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
+  - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
+    strategy: first-match
+    remark: Comment placeholder
+    traffic_rule_name: default
+    traffic_rule_remark: Enable asm policy at request time
+    waf_policy: pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
+  - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
+    strategy: first-match
+    remark: Comment placeholder
+    traffic_rule_name: default
+    traffic_rule_remark: Enable asm policy at request time
+    waf_policy: pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
+  - traffic_policy_name: asm_auto_l7_policy__aws_pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
+    strategy: first-match
+    remark: Comment placeholder
+    traffic_rule_name: default
+    traffic_rule_remark: Enable asm policy at request time
+    waf_policy: pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
+  waf_policy_list:
+  - waf_policy_name: pl-sv3b-cit.awssaashub.test.lloydsbanking.com_44348_spolicy
+    zone: aws
+    tenant_name: aws_pega_vpc1_inbound_as3
+    waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
+  - waf_policy_name: pl-sv3a-cit.awssaashub.test.lloydsbanking.com_44347_spolicy
+    zone: aws
+    tenant_name: aws_pega_vpc1_inbound_as3
+    waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
+  - waf_policy_name: pl-sv2b-cit.awssaashub.test.lloydsbanking.com_44346_spolicy
+    zone: aws
+    tenant_name: aws_pega_vpc1_inbound_as3
+    waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
+  - waf_policy_name: pl-sv2a-cit.awssaashub.test.lloydsbanking.com_44345_spolicy
+    zone: aws
+    tenant_name: aws_pega_vpc1_inbound_as3
+    waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
+  - waf_policy_name: pl-sv1b-cit.awssaashub.test.lloydsbanking.com_44344_spolicy
+    zone: aws
+    tenant_name: aws_pega_vpc1_inbound_as3
+    waf_policy_file: EXT-UC-029-001-v10_spolicy.xml
+  - waf_policy_name: pl-sv1a-cit.awssaashub.test.lloydsbanking.com_44343_spolicy
+    zone: aws
+    tenant_name: aws_pega_vpc1_inbound_as3
+    waf_policy_file: pl-sv1a.awssaashub_44343_spolicy.xml
 
