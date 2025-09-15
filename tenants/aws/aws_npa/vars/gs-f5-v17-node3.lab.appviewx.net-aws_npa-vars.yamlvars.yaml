@@ -202,8 +202,8 @@ application_list:
     cipher_group: /Common/f5-secure
   server_cert_list:
   - server_cert_name: test_server_ssl
-    certificate: Lloyds_test_certificate.com_212
-    key: Lloyds_test_certificate.com.key_13
+    certificate: Lloyds_test_certificate.com1234.crt
+    key: Lloyds_test_certificate.com1234.key
     chain: /Common/DigiCert_TLS_RSA_SHA256_2020_CA1
   client_cert_list:
   - client_cert_name: test_client_ssl
